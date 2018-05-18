@@ -47,7 +47,10 @@ class Student
       LIMIT 1
     SQL
 
-    DB[:conn].execute(sql)
+    DB[:conn].execute(sql, name).map do |row|
+      self.new_from_db(row)
+    end
+
   end
 
   def self.students_below_12th_grade
