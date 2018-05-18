@@ -52,7 +52,7 @@ class Student
 
   def self.students_below_12th_grade
     sql = <<-SQL
-      SELECT *
+      SELECT count(*)
       FROM students
       WHERE grade <  "9th"
       LIMIT 1
