@@ -74,7 +74,7 @@ class Student
 
     DB[:conn].execute(sql, limit_size).map do |row|
       self.new_from_db(row)
-    end
+    end.first
   end
 
 
