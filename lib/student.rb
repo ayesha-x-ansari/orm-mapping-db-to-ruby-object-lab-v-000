@@ -54,7 +54,7 @@ class Student
     sql = <<-SQL
       SELECT count(*)
       FROM students
-      WHERE grade <  "9th"
+      WHERE grade <  "12th"
       LIMIT 1
     SQL
 
