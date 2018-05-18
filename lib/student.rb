@@ -43,7 +43,7 @@ class Student
     sql = <<-SQL
       SELECT count(*)
       FROM students
-      WHERE grade = "9th"
+      WHERE grade = "9"
       LIMIT 1
     SQL
 
